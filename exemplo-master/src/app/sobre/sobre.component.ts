@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CadastroService } from 'src/services/cadastro.service';
 
 @Component({
   selector: 'app-sobre',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SobreComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cadastro: CadastroService) { }
 
   ngOnInit(): void {
+    this.cadastro.listarProdutos();
   }
 
 }

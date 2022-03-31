@@ -12,7 +12,7 @@ import { AdmComponent } from './adm/adm.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { HomeclearComponent } from './homeclear/homeclear.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// Angular ComP
+import {HttpClientModule} from '@angular/common/http';
 
 import {MatSliderModule} from '@angular/material/slider';
 
@@ -31,6 +31,7 @@ import {MatSliderModule} from '@angular/material/slider';
   imports: [
     MatSliderModule,
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],
